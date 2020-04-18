@@ -1,0 +1,26 @@
+ <div class="form-control ">
+        <h3 class="h3">Sign up</h3>
+
+        <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+            <input class="center-block" type='text' fname="firstName" [(ngModel)]="userModel.fname" placeholder="First Name" required>
+
+            <input class="center-block" type='text' lname="lastName" [(ngModel)]="userModel.lname" placeholder="Last Name" required>
+
+            <input class="center-block" type='text' cname="CName" [(ngModel)]="userModel.cname" placeholder="Company Name" required>
+
+            <input class="center-block" type="email" email="email" [(ngModel)]="userModel.email" placeholder="Email" required>
+
+            <input class="center-block" type="password" pass="pass" [(ngModel)]="userModel.pass" placeholder="Password" required>
+
+            <input class="center-block" type="text" addr="address" [(ngModel)]="userModel.addr" placeholder="Address" required>
+
+            <input class="center-block" type="date" dob="dob" [(ngModel)]="userModel.dob" placeholder="Date Of Birth" required>
+            <br>
+            <div class="but" >
+            <button style="margin-right: 30px" type="submit" class="btn  btn-outline-primary" (click)="modalCallback()">Sign In</button>
+            <button  type="reset" class="btn btn-outline-secondary" (click)="onCancel()">Reset</button>
+            </div>
+        </form>  <br>
+           <div class="h2">Already have an account? <a href="/login">SignIn</a></div>
+
+</div>

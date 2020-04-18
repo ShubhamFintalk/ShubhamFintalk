@@ -1,0 +1,28 @@
+.bg {
+    /* The image used */
+    background: url(13.jpg) no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.form-control1
+ {
+     display:block;
+     font-size:1rem;
+     font-weight:400;
+     background-color:#fff;
+     background-clip:padding-box;
+     border:1px solid #93A1AE;
+     border-radius:.28rem;
+
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%,-50%);
+     width:auto;
+     height:auto;
+     box-sizing: border-box ;
+     background: rgba(0,0,0,0.7);
+     padding: 50px;
+     }
